@@ -14,7 +14,7 @@ $(function() {
             $(text).value = '';
         });
 
-        var text  = $("#all").value.replace(/\r\n|\r/g, "\n");
+        var text  = document.getElementById('all').value.replace(/\r\n|\r/g, "\n");
         var lines = text.split( '\n' );
         var outArray = new Array();
     
