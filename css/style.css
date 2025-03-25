@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* .dpr_h1 {
+    color: white;
+    background-color: pink;
+    height: 100px;
+    line-height:100px;
+    text-align: center;
+} */
+
+.displayblock {
+    display: block;
+}
