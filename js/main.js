@@ -11,7 +11,8 @@ $(function() {
     function splitByLine(event) {
         var positionArray = ['sento_pink', 'sento_blue', 'sento_green'];
         positionArray.forEach(function(text) {
-            $(text).value = '';
+            var element = document.getElementById(text);
+            element.value = '';
         });
 
         var text  = document.getElementById('all').value.replace(/\r\n|\r/g, "\n");
@@ -28,7 +29,8 @@ $(function() {
         }
     
         outArray.forEach(function(text, i) {
-            $(positionArray[i]).value = text;
+            var element = document.getElementById(positionArray[i]);
+            element.value = text;
         });
     }
 });
